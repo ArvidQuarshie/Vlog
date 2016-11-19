@@ -26,6 +26,7 @@ import com.amusoft.vlog.Constants;
 import com.amusoft.vlog.Objects.Vlog;
 import com.amusoft.vlog.R;
 import com.google.firebase.database.DatabaseReference;
+import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
 import java.util.List;
@@ -77,8 +78,10 @@ public class VlogItemRecyclerAdapter extends RecyclerView.Adapter<VlogItemRecycl
         }
         if( customViewHolder.imPhoto!=null){
             try {
-                Bitmap v=retriveVideoFrameFromVideo(feedItem.getPath());
-                customViewHolder.imPhoto.setImageBitmap(v);
+//                Bitmap v=retriveVideoFrameFromVideo(feedItem.getPath());
+
+                Picasso.with(mContext).load(feedItem.getPath()).into(customViewHolder.imPhoto);
+
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
             }

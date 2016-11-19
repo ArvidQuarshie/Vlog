@@ -82,6 +82,8 @@ public class LoginActivity extends AppCompatActivity{
     }
 
     private void attemptLogin(final String email, String password, final String username) {
+        prefs.edit().putString(Constants.firebase_reference_user_username,
+                username).commit();
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -122,6 +124,8 @@ if(task.isSuccessful()){
 
 if(task.isSuccessful()){
     Toast.makeText(LoginActivity.this, "Log in Sucessful", Toast.LENGTH_SHORT).show();
+    prefs.edit().putString(Constants.firebase_reference_user_username,
+            username).commit();
 
 
 }

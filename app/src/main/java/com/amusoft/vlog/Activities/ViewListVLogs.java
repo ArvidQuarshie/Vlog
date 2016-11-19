@@ -8,18 +8,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewConfiguration;
 
 import com.amusoft.vlog.Adapters.VlogItemRecyclerAdapter;
 import com.amusoft.vlog.Constants;
 import com.amusoft.vlog.Objects.Vlog;
 import com.amusoft.vlog.R;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.lang.reflect.Field;
 import java.util.List;
 import java.util.Map;
 
@@ -94,5 +99,44 @@ public class ViewListVLogs extends AppCompatActivity {
 
             }
         });
+    }
+    private void getOverflowMenu() {
+
+        try {
+            ViewConfiguration config = ViewConfiguration.get(this);
+
+            Field menuKeyField = ViewConfiguration.class.getDeclaredField("sHasPermanentMenuKey");
+
+            if(menuKeyField != null) {
+
+                menuKeyField.setAccessible(true);
+                menuKeyField.setBoolean(config, false);
+                menuKeyField.isSynthetic();
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_view_list_vlogs, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.action_logout) {
+            FirebaseAuth.getInstance().signOut();
+            Intent i = new Intent(getApplicationContext(),LoginActivity.class);
+            startActivity(i);
+            finish();
+
+
+
+        }
+        return super.onOptionsItemSelected(item);
+
     }
 }
