@@ -5,58 +5,57 @@ package com.amusoft.vlog.Objects;
  */
 
 public class Vlog {
-    String Title="Title";
-    String Path="Path";
-     String Uploader="Uploader";
-    String Views="Views";
-    String firekey="firrekey";
-
-    public Vlog(String title, String path, String uploader, String views) {
-        Title = title;
-        Path = path;
-        Uploader = uploader;
-        Views = views;
-    }
+    String title="title";
+    String path="path";
+     String uploader="uploader";
+    String views="views";
+    String firekey="firekey";
 
     public Vlog(String title, String path, String uploader, String views, String firekey) {
-        Title = title;
-        Path = path;
-        Uploader = uploader;
-        Views = views;
+        this.title = title;
+        this.path = path;
+        this.uploader = uploader;
+        this.views = views;
         this.firekey = firekey;
     }
 
+    public Vlog(String title, String path, String uploader, String views) {
+        this.title = title;
+        this.path = path;
+        this.uploader = uploader;
+        this.views = views;
+    }
+
     public String getTitle() {
-        return Title;
+        return title;
     }
 
     public void setTitle(String title) {
-        Title = title;
+        this.title = title;
     }
 
     public String getPath() {
-        return Path;
+        return path;
     }
 
     public void setPath(String path) {
-        Path = path;
+        this.path = path;
     }
 
     public String getUploader() {
-        return Uploader;
+        return uploader;
     }
 
     public void setUploader(String uploader) {
-        Uploader = uploader;
+        this.uploader = uploader;
     }
 
-
     public String getViews() {
-        return Views;
+        return views;
     }
 
     public void setViews(String views) {
-        Views = views;
+        this.views = views;
     }
 
     public String getFirekey() {

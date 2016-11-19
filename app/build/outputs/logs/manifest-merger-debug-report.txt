@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/sophiebot/Vlog/app/src/main/AndroidManifest.xml:2:1-32:12
+ADDED from /home/sophiebot/Vlog/app/src/main/AndroidManifest.xml:2:1-38:12
 	package
 		ADDED from /home/sophiebot/Vlog/app/src/main/AndroidManifest.xml:3:5-31
 		INJECTED from /home/sophiebot/Vlog/app/src/main/AndroidManifest.xml
@@ -39,13 +39,13 @@ MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] /home/sophiebot/
 	android:name
 		ADDED from /home/sophiebot/Vlog/app/src/main/AndroidManifest.xml:8:22-65
 application
-ADDED from /home/sophiebot/Vlog/app/src/main/AndroidManifest.xml:10:5-30:19
+ADDED from /home/sophiebot/Vlog/app/src/main/AndroidManifest.xml:10:5-36:19
 MERGED from [com.android.support:design:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.0.1] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-media-compat:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-core-utils:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.0.1] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-fragment:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:appcompat-v7:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-vector-drawable:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/AndroidManifest.xml:23:5-20
@@ -56,6 +56,7 @@ MERGED from [com.google.android.gms:play-services-base:9.8.0] /home/sophiebot/Vl
 MERGED from [com.google.android.gms:play-services-basement:9.8.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/AndroidManifest.xml:19:5-21:19
 MERGED from [com.google.android.gms:play-services-tasks:9.8.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-appinvite:9.8.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.8.0/AndroidManifest.xml:19:5-26:19
+MERGED from [com.afollestad:easyvideoplayer:0.3.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.afollestad/easyvideoplayer/0.3.0/AndroidManifest.xml:12:5-20
 MERGED from [com.android.support:cardview-v7:25.0.1] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-common:9.8.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.8.0/AndroidManifest.xml:4:5-7:19
 MERGED from [com.google.firebase:firebase-auth:9.8.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.8.0/AndroidManifest.xml:19:5-20:19
@@ -109,22 +110,24 @@ ADDED from /home/sophiebot/Vlog/app/src/main/AndroidManifest.xml:25:9-28:59
 	android:name
 		ADDED from /home/sophiebot/Vlog/app/src/main/AndroidManifest.xml:26:13-53
 activity#com.amusoft.vlog.Activities.ViewSingleVlog
-ADDED from /home/sophiebot/Vlog/app/src/main/AndroidManifest.xml:29:9-72
+ADDED from /home/sophiebot/Vlog/app/src/main/AndroidManifest.xml:29:9-35:20
+	android:configChanges
+		ADDED from /home/sophiebot/Vlog/app/src/main/AndroidManifest.xml:31:13-87
 	android:name
-		ADDED from /home/sophiebot/Vlog/app/src/main/AndroidManifest.xml:29:19-60
+		ADDED from /home/sophiebot/Vlog/app/src/main/AndroidManifest.xml:30:13-54
 uses-sdk
 INJECTED from /home/sophiebot/Vlog/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:support-v4:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-compat:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.0.1] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-media-compat:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-core-utils:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.0.1] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-fragment:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:appcompat-v7:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:support-vector-drawable:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/AndroidManifest.xml:21:5-43
 MERGED from [com.android.support:animated-vector-drawable:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.0.1] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:transition:25.0.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:9.8.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.8.0/AndroidManifest.xml:17:5-42
 MERGED from [com.google.android.gms:play-services-auth-base:9.8.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.8.0/AndroidManifest.xml:4:5-42
@@ -132,6 +135,8 @@ MERGED from [com.google.android.gms:play-services-base:9.8.0] /home/sophiebot/Vl
 MERGED from [com.google.android.gms:play-services-basement:9.8.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/AndroidManifest.xml:17:5-42
 MERGED from [com.google.android.gms:play-services-tasks:9.8.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/AndroidManifest.xml:3:5-42
 MERGED from [com.google.android.gms:play-services-appinvite:9.8.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.8.0/AndroidManifest.xml:17:5-42
+MERGED from [com.afollestad:easyvideoplayer:0.3.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.afollestad/easyvideoplayer/0.3.0/AndroidManifest.xml:8:5-10:41
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.1.7] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/me.zhanghai.android.materialprogressbar/library/1.1.7/AndroidManifest.xml:12:5-14:41
 MERGED from [com.android.support:cardview-v7:25.0.1] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-database:9.8.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.8.0/AndroidManifest.xml:3:5-42
 MERGED from [com.google.firebase:firebase-database-connection:9.8.0] /home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.8.0/AndroidManifest.xml:3:5-42

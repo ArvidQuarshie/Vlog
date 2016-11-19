@@ -26,7 +26,13 @@
             android:name=".Activities.ViewListVLogs"
             android:label="@string/title_activity_view_list_vlogs"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Activities.ViewSingleVlog"></activity>
+        <activity
+            android:name=".Activities.ViewSingleVlog"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
+
+            >
+
+        </activity>
     </application>
 
 </manifest>

@@ -74,6 +74,8 @@ public class LoginActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 attemptLogin(mEmailView.getText().toString(),mPasswordView.getText().toString(), mUsernameView.getText().toString());
+                prefs.edit().putString(Constants.firebase_reference_user_username,
+                        mUsernameView.getText().toString()).commit();
             }
         });
 
@@ -96,8 +98,7 @@ if(task.isSuccessful()){
     result.put(Constants.firebase_reference_user_email, email);
     result.put(Constants.firebase_reference_user_username,username);
     myRef.push().setValue(result);
-    prefs.edit().putString(Constants.firebase_reference_user_username,
-            username).commit();
+    prefs.edit().putString(Constants.firebase_reference_user_username,username).commit();
     Toast.makeText(LoginActivity.this, "Sucessfully Created user", Toast.LENGTH_SHORT).show();
 
 }

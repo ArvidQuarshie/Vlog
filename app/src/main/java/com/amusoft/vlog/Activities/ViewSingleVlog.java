@@ -15,6 +15,8 @@ import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
 
+import com.afollestad.easyvideoplayer.EasyVideoCallback;
+import com.afollestad.easyvideoplayer.EasyVideoPlayer;
 import com.amusoft.vlog.Constants;
 import com.amusoft.vlog.Objects.Comments;
 import com.amusoft.vlog.Objects.Vlog;
@@ -29,12 +31,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class ViewSingleVlog extends AppCompatActivity {
+public class ViewSingleVlog extends AppCompatActivity implements EasyVideoCallback {
     SharedPreferences prefs ;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference myRef = database.getReference().child(Constants.firebase_reference).child(Constants.firebase_reference_video);
+    DatabaseReference myRef = database.getReference().child(Constants.firebase_reference_video);
 
-    VideoView playVideo;
+//    VideoView playVideo;
+    EasyVideoPlayer playVideo;
     TextView titleTextView,videoviews;
     ListView listComments;
     EditText addComment;
@@ -53,10 +56,19 @@ public class ViewSingleVlog extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_single_vlog);
         prefs = getApplication().getSharedPreferences(Constants.shared_preference, 0);
-        FirebaseKey= getIntent().getExtras().getString(Constants.firebase_reference_video_firekey);
+        FirebaseKey= getIntent().getExtras().getString(Constants.extras_firekeyreference);
         username=prefs.getString(Constants.firebase_reference_user_username,null);
 
-        playVideo=(VideoView)findViewById(R.id.viewsingleVlog);
+//        playVideo=(VideoView)findViewById(R.id.viewsingleVlog);
+
+        playVideo = (EasyVideoPlayer) findViewById(R.id.viewsingleVlog);
+        // Sets the callback to this Activity, since it inherits EasyVideoCallback
+        playVideo.setCallback(this);
+        playVideo.setAutoPlay(true);
+        playVideo.showControls();
+
+
+
         titleTextView=(TextView)findViewById(R.id.viewsingleVlogTitle);
         videoviews=(TextView)findViewById(R.id.viewsingleVlogViews);
         listComments=(ListView)findViewById(R.id.comments_listView);
@@ -89,6 +101,8 @@ public class ViewSingleVlog extends AppCompatActivity {
                     // Perform action on key press
                     String comment=addComment.getText().toString();
                     commentobject=new Comments(username,comment);
+
+                    addComment.setText("");
                     myRef.child(FirebaseKey).child(Constants.firebase_reference_video_comments).push().setValue(commentobject);
 
 
@@ -103,10 +117,11 @@ public class ViewSingleVlog extends AppCompatActivity {
 
     }
     private void fillFiredata() {
-        myRef.child(FirebaseKey).addChildEventListener(new ChildEventListener() {
+        FirebaseKey= getIntent().getExtras().getString(Constants.extras_firekeyreference);
+        myRef.orderByKey().equalTo(FirebaseKey).addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                final Map<String, Object> newPost = (Map<String, Object>) dataSnapshot.getValue();
+                Map<String, Object> newPost = (Map<String, Object>) dataSnapshot.getValue();
                 if (newPost != null) {
                     SelectVideoObject= new Vlog(
                             newPost.get(Constants.firebase_reference_video_title).toString(),
@@ -115,51 +130,10 @@ public class ViewSingleVlog extends AppCompatActivity {
                             newPost.get(Constants.firebase_reference_video_views).toString(),
                             dataSnapshot.getKey());
 
-//                    playVideo=(VideoView)findViewById(R.id.viewsingleVlog);
-//                    titleTextView=(TextView)findViewById(R.id.viewsingleVlogTitle);
-//                    videoviews=(TextView)findViewById(R.id.viewsingleVlogViews);
-//                    listComments=(ListView)findViewById(R.id.comments_listView);
-//                    addComment=(EditText)findViewById(R.id.chat_editText);
-
                     videoviews.setText(SelectVideoObject.getViews() + "Views");
                     titleTextView.setText(SelectVideoObject.getTitle());
-//                    playVideo.setVideoURI(Uri.parse(SelectVideoObject.getPath()));
-//                    playVideo.seekTo(100);
+                    playVideo.setSource(Uri.parse(SelectVideoObject.getPath()));
 
-
-                    pDialog.show();
-
-                    try {
-                        // Start the MediaController
-                        MediaController mediacontroller = new MediaController(getApplication().getApplicationContext());
-                        mediacontroller.setAnchorView(playVideo);
-
-                        Uri videoUri = Uri.parse(SelectVideoObject.getPath());
-                        playVideo.setMediaController(mediacontroller);
-                        playVideo.setVideoURI(videoUri);
-
-                    } catch (Exception e) {
-
-                        e.printStackTrace();
-                    }
-
-                    playVideo.requestFocus();
-                    playVideo.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-                        // Close the progress bar and play the video
-                        public void onPrepared(MediaPlayer mp) {
-                            pDialog.dismiss();
-                            playVideo.start();
-                        }
-                    });
-                    playVideo.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-
-                        public void onCompletion(MediaPlayer mp) {
-                            if (pDialog.isShowing()) {
-                                pDialog.dismiss();
-                            }
-                            finish();
-                        }
-                    });
 
                 }
 
@@ -187,6 +161,7 @@ public class ViewSingleVlog extends AppCompatActivity {
     }
 
     private void fillchatdata() {
+        FirebaseKey= getIntent().getExtras().getString(Constants.extras_firekeyreference);
         myRef.child(FirebaseKey).child(Constants.firebase_reference_video_comments).addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
@@ -225,4 +200,52 @@ public class ViewSingleVlog extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onStarted(EasyVideoPlayer player) {
+        pDialog.hide();
+
+    }
+
+    @Override
+    public void onPaused(EasyVideoPlayer player) {
+
+    }
+
+    @Override
+    public void onPreparing(EasyVideoPlayer player) {
+      player.start();
+
+    }
+
+    @Override
+    public void onPrepared(EasyVideoPlayer player) {
+
+    }
+
+    @Override
+    public void onBuffering(int percent) {
+        pDialog.show();
+
+    }
+
+    @Override
+    public void onError(EasyVideoPlayer player, Exception e) {
+
+    }
+
+    @Override
+    public void onCompletion(EasyVideoPlayer player) {
+        player.start();
+
+    }
+
+    @Override
+    public void onRetry(EasyVideoPlayer player, Uri source) {
+
+    }
+
+    @Override
+    public void onSubmit(EasyVideoPlayer player, Uri source) {
+
+    }
 }

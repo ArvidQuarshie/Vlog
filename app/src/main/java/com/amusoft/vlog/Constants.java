@@ -20,16 +20,19 @@ public class Constants {
 //Video info
 public static final String firebase_reference_video="Vlog";
     //child nodes
-    public static final String firebase_reference_video_title="Title";
-    public static final String firebase_reference_video_path="Path";
-    public static final String firebase_reference_video_uploader="Uploader";
-    public static final String firebase_reference_video_comments="Comments";
-    public static final String firebase_reference_video_views="Views";
+    public static final String firebase_reference_video_title="title";
+    public static final String firebase_reference_video_path="path";
+    public static final String firebase_reference_video_uploader="uploader";
+    public static final String firebase_reference_video_comments="comments";
+    public static final String firebase_reference_video_views="views";
     public static final String firebase_reference_video_firekey="firekey";
 
     //Comments
     public static final String firebase_reference_video_comments_username="user";
     public static final String firebase_reference_video_comments_comment="text";
+
+
+    public static final String extras_firekeyreference="firekeyextras";
 
 
 

@@ -2,7 +2,7 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:elevation="60dp"
+    android:elevation="100dp"
     android:padding="5dp"
     android:id="@+id/toAnimate"
     android:layout_marginBottom="15dp">
@@ -15,17 +15,18 @@
         <android.support.v7.widget.Toolbar
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/toolbarvlogItem"
+
             android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/pure_white"/>
+            android:background="@color/colorPrimary"/>
 
         <!--  ListRow Left sied Thumbnail image -->
         <ImageView
             android:id="@+id/vlogvideo"
             android:layout_width="match_parent"
             android:textStyle="bold"
-
+android:src="@drawable/upload"
             android:layout_height="200dp"
             android:scaleType="fitXY"
             />
@@ -38,7 +39,7 @@
             android:layout_height="wrap_content"
             android:gravity="left"
             android:text="Title"
-            android:textColor="@color/pure_white"
+            android:textColor="@color/black"
             android:textSize="20dip"
             android:textStyle="bold"
             android:typeface="sans"
@@ -51,7 +52,7 @@
 
             android:gravity="left"
             android:text="Uploader"
-            android:textColor="@color/pure_white"
+            android:textColor="@color/black"
             android:textSize="15dip" />
 
 
@@ -63,7 +64,7 @@
 
             android:gravity="left"
             android:text="Views"
-            android:textColor="@color/pure_white"
+            android:textColor="@color/black"
             android:textSize="15dip" />
 
 

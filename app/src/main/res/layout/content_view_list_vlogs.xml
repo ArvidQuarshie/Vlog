@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.amusoft.vlog.Activities.ViewListVLogs"
-    tools:showIn="@layout/activity_view_list_vlogs">
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:id="@+id/forthesnackbar"
+android:layout_height="match_parent"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context=".Activities.ViewListVLogs"
+tools:showIn="@layout/activity_view_list_vlogs">
+    <android.support.v7.widget.RecyclerView
+        android:elevation="300dp"
+        android:id="@+id/recyclelistVideos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
- <android.support.v7.widget.RecyclerView
-     android:id="@+id/listVideos"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content">
-
- </android.support.v7.widget.RecyclerView>
+    </android.support.v7.widget.RecyclerView>
 
 </android.support.v4.widget.NestedScrollView>

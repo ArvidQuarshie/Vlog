@@ -4,14 +4,18 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.view.NestedScrollingChild;
+import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
+
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewConfiguration;
+import android.widget.Toast;
 
 import com.amusoft.vlog.Adapters.VlogItemRecyclerAdapter;
 import com.amusoft.vlog.Constants;
@@ -25,16 +29,18 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 public class ViewListVLogs extends AppCompatActivity {
     SharedPreferences prefs ;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference myRef = database.getReference().child(Constants.firebase_reference).child(Constants.firebase_reference_video);
+    DatabaseReference myRef = database.getReference().child(Constants.firebase_reference_video);
     RecyclerView listVlogs;
     List<Vlog> listVideos;
    VlogItemRecyclerAdapter adapter;
+    NestedScrollView coordinatorLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,11 +48,18 @@ public class ViewListVLogs extends AppCompatActivity {
         setContentView(R.layout.activity_view_list_vlogs);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        listVlogs=(RecyclerView)findViewById(R.id.listVideos);
-        listVlogs.setLayoutManager(new GridLayoutManager(getApplicationContext(), 1));
 
+        coordinatorLayout = (NestedScrollView) findViewById(R.id
+                .forthesnackbar);
+
+        listVideos= new ArrayList<Vlog>();
+
+        listVlogs=(RecyclerView)findViewById(R.id.recyclelistVideos);
+        listVlogs.setLayoutManager(new GridLayoutManager(getApplicationContext(), 1));
         adapter = new VlogItemRecyclerAdapter(getApplicationContext(),listVideos,myRef);
+        listVlogs.setAdapter(adapter);
         getalldata();
+        getOverflowMenu();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -72,6 +85,12 @@ public class ViewListVLogs extends AppCompatActivity {
                             newPost.get(Constants.firebase_reference_video_views).toString(),
                             snapshot.getKey()
                     ));
+
+
+
+                    listVlogs.setLayoutManager(new GridLayoutManager(getApplicationContext(), 1));
+                    adapter = new VlogItemRecyclerAdapter(getApplicationContext(),listVideos,myRef);
+                    listVlogs.setAdapter(adapter);
 
                     adapter.notifyDataSetChanged();
 

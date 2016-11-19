@@ -40,7 +40,10 @@
             android:name="com.amusoft.vlog.Activities.ViewListVLogs"
             android:label="@string/title_activity_view_list_vlogs"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.amusoft.vlog.Activities.ViewSingleVlog" />
+        <activity
+            android:name="com.amusoft.vlog.Activities.ViewSingleVlog"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize" >
+        </activity>
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
             android:excludeFromRecents="true"

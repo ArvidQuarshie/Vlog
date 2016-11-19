@@ -16,6 +16,10 @@
         "source": "/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_big_media_narrow_custom.xml"
     },
     {
+        "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/layout/evp_include_controls.xml",
+        "source": "/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.afollestad/easyvideoplayer/0.3.0/res/layout/evp_include_controls.xml"
+    },
+    {
         "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
         "source": "/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_list_menu_item_radio.xml"
     },
@@ -66,6 +70,10 @@
     {
         "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
         "source": "/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/layout/design_layout_tab_text.xml"
+    },
+    {
+        "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/layout/evp_include_progress.xml",
+        "source": "/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.afollestad/easyvideoplayer/0.3.0/res/layout/evp_include_progress.xml"
     },
     {
         "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
@@ -226,10 +234,6 @@
     {
         "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
         "source": "/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_part_time.xml"
-    },
-    {
-        "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/layout/content_main.xml",
-        "source": "/home/sophiebot/Vlog/app/src/main/res/layout/content_main.xml"
     },
     {
         "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",

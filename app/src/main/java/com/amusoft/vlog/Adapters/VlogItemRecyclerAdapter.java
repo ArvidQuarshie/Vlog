@@ -77,14 +77,10 @@ public class VlogItemRecyclerAdapter extends RecyclerView.Adapter<VlogItemRecycl
             customViewHolder.tvViews.setText( feedItem.getViews() + "Views");
         }
         if( customViewHolder.imPhoto!=null){
-            try {
+
 //                Bitmap v=retriveVideoFrameFromVideo(feedItem.getPath());
 
                 Picasso.with(mContext).load(feedItem.getPath()).into(customViewHolder.imPhoto);
-
-            } catch (Throwable throwable) {
-                throwable.printStackTrace();
-            }
 
 
         }
@@ -99,15 +95,13 @@ public class VlogItemRecyclerAdapter extends RecyclerView.Adapter<VlogItemRecycl
                 int views = Integer.parseInt(feedItemList.get(position).getViews());
                 views++;
                 String setviews= String.valueOf(views);
-                Vlog done=new Vlog(feedItemList.get(position).getTitle(),
-                        feedItemList.get(position).getPath(),
-                        feedItemList.get(position).getUploader(),
-                        setviews);
-                mFirebaseReference.child(feedItemList.get(position).getFirekey()).setValue(done);
+
+                mFirebaseReference.child(feedItemList.get(position).getFirekey()).
+                        child(Constants.firebase_reference_video_views).setValue(setviews);
 
                 Intent xbrew = new Intent(mContext,ViewSingleVlog.class);
                 xbrew.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                xbrew.putExtra(Constants.firebase_reference_video_firekey,
+                xbrew.putExtra(Constants.extras_firekeyreference,
                         feedItemList.get(position).getFirekey().toString());
 
 
@@ -155,7 +149,10 @@ public class VlogItemRecyclerAdapter extends RecyclerView.Adapter<VlogItemRecycl
     @Override
     public int getItemCount()
     {
-        return (null != feedItemList ? feedItemList.size() : 0);
+//        return (null != feedItemList ? feedItemList.size() : 0);
+        if (feedItemList != null && feedItemList.size()!=0);
+        return feedItemList.size();
+
     }
     public class CustomViewHolder extends RecyclerView.ViewHolder {
         protected TextView tvTitle;
@@ -180,37 +177,4 @@ public class VlogItemRecyclerAdapter extends RecyclerView.Adapter<VlogItemRecycl
         }
     }
 
-
-    public static Bitmap retriveVideoFrameFromVideo(String videoPath)
-            throws Throwable
-    {
-        Bitmap bitmap = null;
-        MediaMetadataRetriever mediaMetadataRetriever = null;
-        try
-        {
-            mediaMetadataRetriever = new MediaMetadataRetriever();
-            if (Build.VERSION.SDK_INT >= 14)
-                mediaMetadataRetriever.setDataSource(videoPath, new HashMap<String, String>());
-            else
-                mediaMetadataRetriever.setDataSource(videoPath);
-            //   mediaMetadataRetriever.setDataSource(videoPath);
-            bitmap = mediaMetadataRetriever.getFrameAtTime();
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-            throw new Throwable(
-                    "Exception in retriveVideoFrameFromVideo(String videoPath)"
-                            + e.getMessage());
-
-        }
-        finally
-        {
-            if (mediaMetadataRetriever != null)
-            {
-                mediaMetadataRetriever.release();
-            }
-        }
-        return bitmap;
-    }
 }

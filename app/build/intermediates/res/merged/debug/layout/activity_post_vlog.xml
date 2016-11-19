@@ -13,12 +13,20 @@
         android:layout_width="wrap_content"
         android:layout_height="192dp" />
 
-    <VideoView
+    <!--<VideoView-->
+        <!--android:visibility="gone"-->
+        <!--android:clickable="true"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="192dp"-->
+        <!--android:id="@+id/postvideoView" />-->
+
+
+    <com.afollestad.easyvideoplayer.EasyVideoPlayer
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/postvideoView"
         android:visibility="gone"
-        android:clickable="true"
-        android:layout_width="wrap_content"
-        android:layout_height="192dp"
-        android:id="@+id/postvideoView" />
+        android:layout_width="match_parent"
+        android:layout_height="192dp" />
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"

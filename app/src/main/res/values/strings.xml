@@ -17,7 +17,7 @@
     <string name="prompt_username">Username</string>
     <string name="prompt_Title">Title</string>
     <string name="action_post">Post Vlog</string>
-    <string name="title_activity_view_list_vlogs">ViewLIstVLogs</string>
+    <string name="title_activity_view_list_vlogs">Vlogs</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
