@@ -202,7 +202,6 @@ public class ViewSingleVlog extends AppCompatActivity implements EasyVideoCallba
 
     @Override
     public void onStarted(EasyVideoPlayer player) {
-        pDialog.hide();
 
     }
 
@@ -213,7 +212,7 @@ public class ViewSingleVlog extends AppCompatActivity implements EasyVideoCallba
 
     @Override
     public void onPreparing(EasyVideoPlayer player) {
-      player.start();
+
 
     }
 
@@ -224,7 +223,6 @@ public class ViewSingleVlog extends AppCompatActivity implements EasyVideoCallba
 
     @Override
     public void onBuffering(int percent) {
-        pDialog.show();
 
     }
 
@@ -235,7 +233,7 @@ public class ViewSingleVlog extends AppCompatActivity implements EasyVideoCallba
 
     @Override
     public void onCompletion(EasyVideoPlayer player) {
-        player.start();
+
 
     }
 

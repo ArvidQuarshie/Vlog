@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.MediaStore;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,8 +20,13 @@ import com.afollestad.easyvideoplayer.EasyVideoPlayer;
 import com.amusoft.vlog.Constants;
 import com.amusoft.vlog.Objects.Vlog;
 import com.amusoft.vlog.R;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -30,6 +36,11 @@ public class PostVlog extends AppCompatActivity implements EasyVideoCallback {
     SharedPreferences prefs ;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference().child(Constants.firebase_reference_video);
+
+    FirebaseStorage storage = FirebaseStorage.getInstance();
+    StorageReference storageRef = storage.getReferenceFromUrl(Constants.firebase_storage);
+
+
 
 
     ImageView promptupload;
@@ -65,6 +76,7 @@ public class PostVlog extends AppCompatActivity implements EasyVideoCallback {
         touploadvideo.setAutoPlay(true);
         touploadvideo.setCallback(this);
         touploadvideo.setAutoPlay(true);
+
         touploadvideo.showControls();
 
 
@@ -111,6 +123,8 @@ public class PostVlog extends AppCompatActivity implements EasyVideoCallback {
                 myRef.push().setValue(fillData);
 
                 Toast.makeText(getApplicationContext(),"Vlog Sucessfully Uploaded",Toast.LENGTH_SHORT).show();
+                prefs.edit().remove(Constants.firebase_reference_video_path).commit();
+
 
 
                 Intent i=new Intent(getApplicationContext(),ViewListVLogs.class);
@@ -139,25 +153,64 @@ public class PostVlog extends AppCompatActivity implements EasyVideoCallback {
 
                 // OI FILE Manager
                 filemanagerstring = selectedImageUri.getPath();
-//                touploadvideo.setVideoURI(Uri.parse(filemanagerstring));
-//                touploadvideo.seekTo(100);
+                touploadvideo.setSource(Uri.parse(filemanagerstring));
+                touploadvideo.seekTo(100);
 
                 // Sets the source to the HTTP URL held in the TEST_URL variable.
                 // To play files, you can use Uri.fromFile(new File("..."))
                 touploadvideo.setSource(Uri.parse(filemanagerstring));
 
-                prefs.edit().putString(Constants.firebase_reference_video_path,
-                        filemanagerstring).commit();
+
+
+
+                StorageReference riversRef = storageRef.child(filemanagerstring);
+                UploadTask uploadTask = riversRef.putFile(selectedImageUri);
+
+// Register observers to listen for when the download is done or if it fails
+                uploadTask.addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception exception) {
+                        // Handle unsuccessful uploads
+                    }
+                }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                    @Override
+                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                        // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
+                        Uri downloadUrl = taskSnapshot.getDownloadUrl();
+                        prefs.edit().putString(Constants.firebase_reference_video_path,
+                                downloadUrl.toString()).commit();
+                    }
+                });
+
+
 
                 // MEDIA GALLERY
                 selectedImagePath = getPath(selectedImageUri);
                 if (selectedImagePath != null) {
-                    prefs.edit().putString(Constants.firebase_reference_video_path,
-                            filemanagerstring).commit();
 
 //                    touploadvideo.setVideoURI(Uri.parse(selectedImagePath));
 //                    touploadvideo.seekTo(100);
                     touploadvideo.setSource(Uri.parse(filemanagerstring));
+
+
+                    riversRef = storageRef.child(selectedImagePath);
+                    uploadTask = riversRef.putFile(selectedImageUri);
+
+// Register observers to listen for when the download is done or if it fails
+                    uploadTask.addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception exception) {
+                            // Handle unsuccessful uploads
+                        }
+                    }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                            // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
+                            Uri downloadUrl = taskSnapshot.getDownloadUrl();
+                            prefs.edit().putString(Constants.firebase_reference_video_path,
+                                    downloadUrl.toString()).commit();
+                        }
+                    });
 
 
 
@@ -198,7 +251,6 @@ public class PostVlog extends AppCompatActivity implements EasyVideoCallback {
 
     @Override
     public void onPrepared(EasyVideoPlayer player) {
-        player.start();
 
     }
 

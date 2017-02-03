@@ -12,12 +12,12 @@
         "source": "/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow_custom.xml",
-        "source": "/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_big_media_narrow_custom.xml"
-    },
-    {
         "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/layout/evp_include_controls.xml",
         "source": "/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.afollestad/easyvideoplayer/0.3.0/res/layout/evp_include_controls.xml"
+    },
+    {
+        "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow_custom.xml",
+        "source": "/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_big_media_narrow_custom.xml"
     },
     {
         "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",

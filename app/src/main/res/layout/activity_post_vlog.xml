@@ -26,7 +26,7 @@
         android:id="@+id/postvideoView"
         android:visibility="gone"
         android:layout_width="match_parent"
-        android:layout_height="192dp" />
+        android:layout_height="230dp" />
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
