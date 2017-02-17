@@ -20,11 +20,11 @@
                 <!--android:layout_width="wrap_content"-->
                 <!--android:layout_height="164dp" />-->
 
-            <com.afollestad.easyvideoplayer.EasyVideoPlayer
+            <com.google.android.exoplayer2.ui.SimpleExoPlayerView
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/viewsingleVlog"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="192dp" />
 
             <TextView
                 android:id="@+id/viewsingleVlogTitle"

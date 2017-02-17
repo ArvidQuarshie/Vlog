@@ -21,12 +21,12 @@
         <!--android:id="@+id/postvideoView" />-->
 
 
-    <com.afollestad.easyvideoplayer.EasyVideoPlayer
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/postvideoView"
         android:visibility="gone"
-        android:layout_width="match_parent"
-        android:layout_height="230dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="192dp" />
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
