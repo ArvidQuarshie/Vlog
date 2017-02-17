@@ -162,6 +162,7 @@ public class PostVlog extends AppCompatActivity
                 fillData.put(Constants.firebase_reference_video_views,String.valueOf(0));
                 myRef.push().setValue(fillData);
                 Toast.makeText(getApplicationContext(),"Vlog Sucessfully Uploaded",Toast.LENGTH_SHORT).show();
+                prefs.edit().remove(Constants.firebase_reference_video_path).commit();
 
 
                 Intent i=new Intent(getApplicationContext(),ViewListVLogs.class);
