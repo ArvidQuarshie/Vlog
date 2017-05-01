@@ -2,11 +2,14 @@ package com.amusoft.vlog.Objects;
 
 /**
  * Created by sophiebot on 11/19/16.
+ * Comment object that contains user and their comments.
+ *
+ *
  */
 
 public class Comments {
-     String user="user";
-    String text="text";
+    String user = "user";
+    String text = "text";
 
     public Comments(String user, String text) {
         this.user = user;

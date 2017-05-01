@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+
 import com.amusoft.vlog.Constants;
 import com.amusoft.vlog.Objects.Comments;
 import com.amusoft.vlog.Objects.Vlog;
@@ -51,21 +52,21 @@ import java.util.List;
 import java.util.Map;
 
 public class ViewSingleVlog extends AppCompatActivity
-        implements View.OnClickListener,ExoPlayer.EventListener,
+        implements View.OnClickListener, ExoPlayer.EventListener,
         PlaybackControlView.VisibilityListener {
-    SharedPreferences prefs ;
+    SharedPreferences prefs;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference().child(Constants.firebase_reference_video);
 
-//    VideoView playVideo;
+    //    VideoView playVideo;
     SimpleExoPlayerView playVideo;
-    TextView titleTextView,videoviews;
+    TextView titleTextView, videoviews;
     ListView listComments;
     EditText addComment;
-    String FirebaseKey,username;
+    String FirebaseKey, username;
     Vlog SelectVideoObject;
     Comments commentobject;
-    List <String> commentslazycount;
+    List<String> commentslazycount;
     SimpleExoPlayer player;
 
     ArrayAdapter<String> itemsAdapter;
@@ -78,8 +79,8 @@ public class ViewSingleVlog extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_single_vlog);
         prefs = getApplication().getSharedPreferences(Constants.shared_preference, 0);
-        FirebaseKey= getIntent().getExtras().getString(Constants.extras_firekeyreference);
-        username=prefs.getString(Constants.firebase_reference_user_username,null);
+        FirebaseKey = getIntent().getExtras().getString(Constants.extras_firekeyreference);
+        username = prefs.getString(Constants.firebase_reference_user_username, null);
 
 //        playVideo=(VideoView)findViewById(R.id.viewsingleVlog);
 
@@ -104,18 +105,15 @@ public class ViewSingleVlog extends AppCompatActivity
         playVideo.setPlayer(player);
 
 
+        titleTextView = (TextView) findViewById(R.id.viewsingleVlogTitle);
+        videoviews = (TextView) findViewById(R.id.viewsingleVlogViews);
+        listComments = (ListView) findViewById(R.id.comments_listView);
+        addComment = (EditText) findViewById(R.id.chat_editText);
+        commentslazycount = new ArrayList<String>();
 
 
-        titleTextView=(TextView)findViewById(R.id.viewsingleVlogTitle);
-        videoviews=(TextView)findViewById(R.id.viewsingleVlogViews);
-        listComments=(ListView)findViewById(R.id.comments_listView);
-        addComment=(EditText)findViewById(R.id.chat_editText);
-        commentslazycount=new ArrayList<String>();
-
-
-     itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,commentslazycount);
+        itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, commentslazycount);
         listComments.setAdapter(itemsAdapter);
-
 
 
         pDialog = new ProgressDialog(this);
@@ -130,14 +128,13 @@ public class ViewSingleVlog extends AppCompatActivity
         fillchatdata();
 
 
-
         addComment.setOnKeyListener(new View.OnKeyListener() {
             public boolean onKey(View v, int keyCode, KeyEvent event) {
- // If the event is a key-down event on the "enter" button
+                // If the event is a key-down event on the "enter" button
                 if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
                     // Perform action on key press
-                    String comment=addComment.getText().toString();
-                    commentobject=new Comments(username,comment);
+                    String comment = addComment.getText().toString();
+                    commentobject = new Comments(username, comment);
 
                     addComment.setText("");
                     myRef.child(FirebaseKey).child(Constants.firebase_reference_video_comments).push().setValue(commentobject);
@@ -153,6 +150,7 @@ public class ViewSingleVlog extends AppCompatActivity
         });
 
     }
+
     private void setMediasource(Uri x) {
 
 // Measures bandwidth during playback. Can be null if not required.
@@ -170,13 +168,15 @@ public class ViewSingleVlog extends AppCompatActivity
     }
 
     private void fillFiredata() {
-        FirebaseKey= getIntent().getExtras().getString(Constants.extras_firekeyreference);
+
+        //getting the firebase key from the  clicked item.
+        FirebaseKey = getIntent().getExtras().getString(Constants.extras_firekeyreference);
         myRef.orderByKey().equalTo(FirebaseKey).addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 Map<String, Object> newPost = (Map<String, Object>) dataSnapshot.getValue();
                 if (newPost != null) {
-                    SelectVideoObject= new Vlog(
+                    SelectVideoObject = new Vlog(
                             newPost.get(Constants.firebase_reference_video_title).toString(),
                             newPost.get(Constants.firebase_reference_video_path).toString(),
                             newPost.get(Constants.firebase_reference_video_uploader).toString(),
@@ -191,6 +191,7 @@ public class ViewSingleVlog extends AppCompatActivity
                 }
 
             }
+
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
 
@@ -214,14 +215,14 @@ public class ViewSingleVlog extends AppCompatActivity
     }
 
     private void fillchatdata() {
-        FirebaseKey= getIntent().getExtras().getString(Constants.extras_firekeyreference);
+        FirebaseKey = getIntent().getExtras().getString(Constants.extras_firekeyreference);
         myRef.child(FirebaseKey).child(Constants.firebase_reference_video_comments).addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 Map<String, Object> newPost = (Map<String, Object>) dataSnapshot.getValue();
                 if (newPost != null) {
-                    String whatineed=newPost.get(Constants.firebase_reference_video_comments_username).toString()
-                            +":"+
+                    String whatineed = newPost.get(Constants.firebase_reference_video_comments_username).toString()
+                            + ":" +
                             newPost.get(Constants.firebase_reference_video_comments_comment).toString();
                     commentslazycount.add(whatineed);
                     itemsAdapter.notifyDataSetChanged();

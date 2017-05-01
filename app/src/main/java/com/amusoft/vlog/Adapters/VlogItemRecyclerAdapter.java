@@ -41,10 +41,10 @@ public class VlogItemRecyclerAdapter extends RecyclerView.Adapter<VlogItemRecycl
     private DatabaseReference mFirebaseReference;
 
 
-        public VlogItemRecyclerAdapter(Context context, List<Vlog> feedItemList,DatabaseReference mFirebaseReference) {
+    public VlogItemRecyclerAdapter(Context context, List<Vlog> feedItemList, DatabaseReference mFirebaseReference) {
         this.feedItemList = feedItemList;
         this.mContext = context;
-        this.mFirebaseReference=mFirebaseReference;
+        this.mFirebaseReference = mFirebaseReference;
     }
 
     @Override
@@ -60,7 +60,6 @@ public class VlogItemRecyclerAdapter extends RecyclerView.Adapter<VlogItemRecycl
         final Vlog feedItem = feedItemList.get(i);
 
 
-
         customViewHolder.tool.setTitle(feedItem.getTitle());
         customViewHolder.tool.setTitleTextColor(mContext.getResources().getColor(R.color.pure_white));
         customViewHolder.tool.setBackgroundColor(mContext.getResources().getColor(R.color.colorPrimary));
@@ -69,18 +68,18 @@ public class VlogItemRecyclerAdapter extends RecyclerView.Adapter<VlogItemRecycl
             customViewHolder.tvTitle.setText(feedItem.getTitle());
         }
 
-        if ( customViewHolder.tvUploader != null) {
+        if (customViewHolder.tvUploader != null) {
             customViewHolder.tvUploader.setText(feedItem.getUploader());
         }
 
-        if ( customViewHolder.tvViews!= null) {
-            customViewHolder.tvViews.setText( feedItem.getViews() + "Views");
+        if (customViewHolder.tvViews != null) {
+            customViewHolder.tvViews.setText(feedItem.getViews() + "Views");
         }
-        if( customViewHolder.imPhoto!=null){
+        if (customViewHolder.imPhoto != null) {
 
 //                Bitmap v=retriveVideoFrameFromVideo(feedItem.getPath());
 
-                Picasso.with(mContext).load(feedItem.getPath()).into(customViewHolder.imPhoto);
+            Picasso.with(mContext).load(feedItem.getPath()).into(customViewHolder.imPhoto);
 
 
         }
@@ -94,12 +93,12 @@ public class VlogItemRecyclerAdapter extends RecyclerView.Adapter<VlogItemRecycl
 
                 int views = Integer.parseInt(feedItemList.get(position).getViews());
                 views++;
-                String setviews= String.valueOf(views);
+                String setviews = String.valueOf(views);
 
                 mFirebaseReference.child(feedItemList.get(position).getFirekey()).
                         child(Constants.firebase_reference_video_views).setValue(setviews);
 
-                Intent xbrew = new Intent(mContext,ViewSingleVlog.class);
+                Intent xbrew = new Intent(mContext, ViewSingleVlog.class);
                 xbrew.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 xbrew.putExtra(Constants.extras_firekeyreference,
                         feedItemList.get(position).getFirekey().toString());
@@ -129,12 +128,10 @@ public class VlogItemRecyclerAdapter extends RecyclerView.Adapter<VlogItemRecycl
     /**
      * Here is the key method to apply the animation
      */
-    private void setAnimation(CustomViewHolder viewToAnimate, int position)
-    {
+    private void setAnimation(CustomViewHolder viewToAnimate, int position) {
         // If the bound view wasn't previously displayed on screen, it's animated
-        int lastPosition=position-1;
-        if (position > lastPosition)
-        {
+        int lastPosition = position - 1;
+        if (position > lastPosition) {
             final Animation fade = AnimationUtils.loadAnimation(mContext, R.anim.fade_in);
             viewToAnimate.t.setAnimation(fade);
             lastPosition = position;
@@ -142,36 +139,30 @@ public class VlogItemRecyclerAdapter extends RecyclerView.Adapter<VlogItemRecycl
     }
 
 
-
-
-
-
     @Override
-    public int getItemCount()
-    {
+    public int getItemCount() {
 //        return (null != feedItemList ? feedItemList.size() : 0);
-        if (feedItemList != null && feedItemList.size()!=0);
+        if (feedItemList != null && feedItemList.size() != 0) ;
         return feedItemList.size();
 
     }
+
     public class CustomViewHolder extends RecyclerView.ViewHolder {
         protected TextView tvTitle;
-        protected TextView tvUploader ;
-        protected TextView tvViews ;
+        protected TextView tvUploader;
+        protected TextView tvViews;
         protected ImageView imPhoto;
         protected Toolbar tool;
         protected CardView t;
+
         public CustomViewHolder(View v) {
             super(v);
-            this.tvTitle= (TextView) v.findViewById(R.id.memTitle);
-            this.tvUploader= (TextView) v.findViewById(R.id.memuploader);
-            this.tvViews= (TextView) v.findViewById(R.id.memViews);
+            this.tvTitle = (TextView) v.findViewById(R.id.memTitle);
+            this.tvUploader = (TextView) v.findViewById(R.id.memuploader);
+            this.tvViews = (TextView) v.findViewById(R.id.memViews);
             this.imPhoto = (ImageView) v.findViewById(R.id.vlogvideo);
-            this.tool=(Toolbar)v.findViewById(R.id.toolbarvlogItem);
-            this.t=(CardView)v.findViewById(R.id.toAnimate);
-
-
-
+            this.tool = (Toolbar) v.findViewById(R.id.toolbarvlogItem);
+            this.t = (CardView) v.findViewById(R.id.toAnimate);
 
 
         }

@@ -1,14 +1,14 @@
 [
     {
-        "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/menu/menu_post_item.xml",
-        "source": "/home/sophiebot/Vlog/app/src/main/res/menu/menu_post_item.xml"
+        "merged": "C:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "C:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\src\\main\\res\\menu\\menu_main.xml"
     },
     {
-        "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/menu/menu_view_list_vlogs.xml",
-        "source": "/home/sophiebot/Vlog/app/src/main/res/menu/menu_view_list_vlogs.xml"
+        "merged": "C:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_view_list_vlogs.xml",
+        "source": "C:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\src\\main\\res\\menu\\menu_view_list_vlogs.xml"
     },
     {
-        "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
-        "source": "/home/sophiebot/Vlog/app/src/main/res/menu/menu_main.xml"
+        "merged": "C:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_post_item.xml",
+        "source": "C:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\src\\main\\res\\menu\\menu_post_item.xml"
     }
 ]

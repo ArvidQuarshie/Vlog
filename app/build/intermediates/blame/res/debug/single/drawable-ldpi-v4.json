@@ -1,26 +1,26 @@
 [
     {
-        "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/exo_controls_pause.png",
-        "source": "/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.2.0/res/drawable-ldpi-v4/exo_controls_pause.png"
+        "merged": "C:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\exo_controls_fastforward.png",
+        "source": "C:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.exoplayer\\exoplayer\\r2.2.0\\res\\drawable-ldpi-v4\\exo_controls_fastforward.png"
     },
     {
-        "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/exo_controls_fastforward.png",
-        "source": "/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.2.0/res/drawable-ldpi-v4/exo_controls_fastforward.png"
+        "merged": "C:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\exo_controls_previous.png",
+        "source": "C:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.exoplayer\\exoplayer\\r2.2.0\\res\\drawable-ldpi-v4\\exo_controls_previous.png"
     },
     {
-        "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/exo_controls_play.png",
-        "source": "/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.2.0/res/drawable-ldpi-v4/exo_controls_play.png"
+        "merged": "C:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\exo_controls_play.png",
+        "source": "C:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.exoplayer\\exoplayer\\r2.2.0\\res\\drawable-ldpi-v4\\exo_controls_play.png"
     },
     {
-        "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/exo_controls_rewind.png",
-        "source": "/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.2.0/res/drawable-ldpi-v4/exo_controls_rewind.png"
+        "merged": "C:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\exo_controls_next.png",
+        "source": "C:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.exoplayer\\exoplayer\\r2.2.0\\res\\drawable-ldpi-v4\\exo_controls_next.png"
     },
     {
-        "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/exo_controls_previous.png",
-        "source": "/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.2.0/res/drawable-ldpi-v4/exo_controls_previous.png"
+        "merged": "C:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\exo_controls_pause.png",
+        "source": "C:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.exoplayer\\exoplayer\\r2.2.0\\res\\drawable-ldpi-v4\\exo_controls_pause.png"
     },
     {
-        "merged": "/home/sophiebot/Vlog/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/exo_controls_next.png",
-        "source": "/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.2.0/res/drawable-ldpi-v4/exo_controls_next.png"
+        "merged": "C:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\exo_controls_rewind.png",
+        "source": "C:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.exoplayer\\exoplayer\\r2.2.0\\res\\drawable-ldpi-v4\\exo_controls_rewind.png"
     }
 ]

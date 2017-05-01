@@ -59,11 +59,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class PostVlog extends AppCompatActivity
-        implements View.OnClickListener,ExoPlayer.EventListener,
+        implements View.OnClickListener, ExoPlayer.EventListener,
         PlaybackControlView.VisibilityListener {
 
 
-    SharedPreferences prefs ;
+    SharedPreferences prefs;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference().child(Constants.firebase_reference_video);
 
@@ -88,6 +88,7 @@ public class PostVlog extends AppCompatActivity
 
 
     SimpleExoPlayerView touploadvideo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -95,14 +96,10 @@ public class PostVlog extends AppCompatActivity
         getUser();
 
         prefs = getApplication().getSharedPreferences(Constants.shared_preference, 0);
-        promptupload = (ImageView)findViewById(R.id.uploadprompt);
-        touploadvideo=(SimpleExoPlayerView) findViewById(R.id.postvideoView);
+        promptupload = (ImageView) findViewById(R.id.uploadprompt);
+        touploadvideo = (SimpleExoPlayerView) findViewById(R.id.postvideoView);
         touploadvideo.setControllerVisibilityListener(this);
         touploadvideo.requestFocus();
-
-
-
-
 
 
 // 1. Create a default TrackSelector
@@ -124,16 +121,15 @@ public class PostVlog extends AppCompatActivity
         touploadvideo.setPlayer(player);
 
 
-
-        VideoTitle=(TextView)findViewById(R.id.postvideotitle);
-        btnpost=(Button)findViewById(R.id.post);
+        VideoTitle = (TextView) findViewById(R.id.postvideotitle);
+        btnpost = (Button) findViewById(R.id.post);
         promptupload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
                 intent.setType("video/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
-                startActivityForResult(Intent.createChooser(intent,"Select Video"),REQUEST_TAKE_GALLERY_VIDEO);
+                startActivityForResult(Intent.createChooser(intent, "Select Video"), REQUEST_TAKE_GALLERY_VIDEO);
 
             }
         });
@@ -147,7 +143,7 @@ public class PostVlog extends AppCompatActivity
                 Intent intent = new Intent();
                 intent.setType("video/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
-                startActivityForResult(Intent.createChooser(intent,"Select Video"),REQUEST_TAKE_GALLERY_VIDEO);
+                startActivityForResult(Intent.createChooser(intent, "Select Video"), REQUEST_TAKE_GALLERY_VIDEO);
             }
         });
 
@@ -155,23 +151,19 @@ public class PostVlog extends AppCompatActivity
             @Override
             public void onClick(View view) {
 
-                Map<String, Object> fillData =new HashMap<String, Object>();
-                fillData.put(Constants.firebase_reference_video_title,VideoTitle.getText().toString());
-                fillData.put(Constants.firebase_reference_video_path,prefs.getString(Constants.firebase_reference_video_path,null).toString());
-                fillData.put(Constants.firebase_reference_video_uploader,user=prefs.getString(Constants.firebase_reference_user_username,null));
-                fillData.put(Constants.firebase_reference_video_views,String.valueOf(0));
+                Map<String, Object> fillData = new HashMap<String, Object>();
+                fillData.put(Constants.firebase_reference_video_title, VideoTitle.getText().toString());
+                fillData.put(Constants.firebase_reference_video_path, prefs.getString(Constants.firebase_reference_video_path, null).toString());
+                fillData.put(Constants.firebase_reference_video_uploader, user = prefs.getString(Constants.firebase_reference_user_username, null));
+                fillData.put(Constants.firebase_reference_video_views, String.valueOf(0));
                 myRef.push().setValue(fillData);
-                Toast.makeText(getApplicationContext(),"Vlog Sucessfully Uploaded",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Vlog Sucessfully Uploaded", Toast.LENGTH_SHORT).show();
                 prefs.edit().remove(Constants.firebase_reference_video_path).commit();
 
 
-                Intent i=new Intent(getApplicationContext(),ViewListVLogs.class);
+                Intent i = new Intent(getApplicationContext(), ViewListVLogs.class);
                 startActivity(i);
                 finish();
-
-
-
-
 
 
             }
@@ -181,9 +173,9 @@ public class PostVlog extends AppCompatActivity
 
 
     private void getUser() {
-        try{
-            user=prefs.getString(Constants.firebase_reference_user_username,null);
-        }catch (Exception IDGAF){
+        try {
+            user = prefs.getString(Constants.firebase_reference_user_username, null);
+        } catch (Exception IDGAF) {
 
         }
 
@@ -208,9 +200,6 @@ public class PostVlog extends AppCompatActivity
 //                        filemanagerstring).commit();
 
 
-
-
-
                 // MEDIA GALLERY
                 selectedImagePath = getPath(selectedImageUri);
                 if (selectedImagePath != null) {
@@ -220,12 +209,10 @@ public class PostVlog extends AppCompatActivity
                     setMediasource(Uri.parse(selectedImagePath));
 
 
-
-
                     // do background work here
                     //saving storage
 
-                    StorageReference riversRef = storageRef.child("Vlogs"+selectedImageUri.getLastPathSegment());
+                    StorageReference riversRef = storageRef.child("Vlogs" + selectedImageUri.getLastPathSegment());
 
                     UploadTask uploadTask;
 
@@ -247,13 +234,8 @@ public class PostVlog extends AppCompatActivity
                                     String.valueOf(downloadUrl)).commit();
 
 
-
-
-
                         }
                     });
-
-
 
 
                 }
@@ -278,7 +260,7 @@ public class PostVlog extends AppCompatActivity
 
     // UPDATED!
     public String getPath(Uri uri) {
-        String[] projection = { MediaStore.Images.Media.DATA };
+        String[] projection = {MediaStore.Images.Media.DATA};
         Cursor cursor = managedQuery(uri, projection, null, null, null);
         if (cursor != null) {
             // HERE YOU WILL GET A NULLPOINTER IF CURSOR IS NULL

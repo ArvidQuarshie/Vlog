@@ -5,11 +5,11 @@ package com.amusoft.vlog.Objects;
  */
 
 public class Vlog {
-    String title="title";
-    String path="path";
-     String uploader="uploader";
-    String views="views";
-    String firekey="firekey";
+    String title = "title";
+    String path = "path";
+    String uploader = "uploader";
+    String views = "views";
+    String firekey = "firekey";
 
     public Vlog(String title, String path, String uploader, String views, String firekey) {
         this.title = title;

@@ -2,364 +2,382 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="94fca868854457ede6df15c902938468c71d579e">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-10.2.0_4e17632a6af6d43e7c9cb0d0de816ee294fc11b5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_5a28f44d7b9136f88296c676a7b679d82853a29f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_ef75cf717deccaca8b1eb9efafcaca2843fb06d5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-10.2.0_7b83974a3ddd2f8175b3d3f56c9f6bb045828d7e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="646b2c48e147b943f0a39842457fdc66d501e4b6">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appinvite-10.2.0_d7e6b9327fb7e1424d22f68a71740bdc93df265c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.1_2ade963b9b5b6e0a7d49d67104e17a53904782be.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ce9112e08a027c8620ae693983e38cdbb9f6371b">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-10.2.0_d6afcb7502bc804b710bb008e9b87f8798b15538.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_76a57c3fff97b6e9506acc175ce67e1c1d3319c3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_6872ff7c9493cb63dd3dedfc1a23000f844cad93.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/10.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="48532a016bb0dfbe7970c147ce784598a515406b">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-10.2.0_8bb9934b9bb204bbc8b8fe3d8bedaf695300975e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_8483dc0508cea8a18e921f824583effb90210556.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/10.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8e1d31656bc9f1889283836e025e6cb703acd38a">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-10.2.0_9ed6db3ca05a8c3a1a9ff3a468ce226b8ebc58ac.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_a50bfadbeead54534bb3027e36de9d232472fb98.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/10.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0e301f24b283f14b564f660c9abe863af6be5896">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-connection-10.2.0_b77fc6706958cac61baa10b5fa5ca3bc90a40629.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/10.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1df6d719c4e264d66bb98baa5cb637495b8cca66">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-common-10.2.0_6a5a3b3a27a3114bbe65c4efcd11206b92d311bd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.1_bc525499f2c5ea717bd9b834c8fed63a8c1bb800.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_29f12a0e9d0cdb591c6d456ff26ada4457ebfc06.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.1_1d604b23fca9009cc8b28d334b32855791b89c69.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_e985f758d1b01913dd888a83f129631efd347515.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/10.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4e01b82d664e1a8253b2b9658e74b5da35c8771d">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-base-10.2.0_135efd9cbe373d3ef8172707adfebba77a831674.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a61e7010aa7be5da53cd1bc5279630510c9a4912">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-10.2.0_1beeb5bd6b93dfed48afd8f3381c00b98b5473c4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0d5cbbbfe040201c7569478b70a13b58fd11aab4">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-10.2.0_09de8f665df0f7855b4fd3ae39a4adf8f9824d2e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/10.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="74c5a91d6510ad42410e8a047d90d2ea6721a0e0">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-config-10.2.0_d990035b257786e9462937592a6981b7621712d1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.0.1_bf05189fa0ccf1abce9f4d8117391e5a4f54ff7a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_9d8ff3d89d06b339f04fd38c0323271764e9f4b9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_e76cb5380eda7a7b10be33def9860d73f2b5b5dd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.1_97a8647656d4cd0a26f9698fd3907c508b85aeba.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/10.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0f58195bee8a08f35e7d4ee7fd4b0479e570e172">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-crash-10.2.0_a8fe0f9de960bbc30b596d9e323589adb0664598.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b831d3902674d096189451d46fce219e2c2904b7">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-10.2.0_1d47ce071163a7c3d6662e3cb9e1aa44d37282f6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3d6951cb416ebf8c66a32b9480808ca247b68344">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-10.2.0_5dd479b827ba6032d2bf1798c437a1e1b7a81ad9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_3a4657504a15431d008eec68967ddbd69035fe37.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_2fee05ebbd4410c257577de15bf2b3259c1521ac.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="75575883f0348fc5d2be85f23bd10b050095cf17">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-messaging-10.2.0_94efc343bf3b40fdffc43679bcbf65c43b6ce67b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.4/695b63d702f505b9b916e02272e3b6381bade7f/gson-2.4.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/gson-2.4_f6ace38e20e4a9476f672c739912e74b820af99a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.0/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.0\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="1ac56e5801e986583cbe27f2cce57f626cc7ff93">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-10.2.0_fd3005fb979288b6bdc7042f00783c76b5fdeafb.jar" />
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-10.2.0_07a6133cc764a21d935c05ded8b2cd2ba16ad93c\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.2.0/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.1\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="31ead391552fc8d93a7b87b0f15e83755b908904">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.google.android.exoplayer-exoplayer-r2.2.0_dc5bb1d5bd2a29e0a81283d4e918c4308f89cc56.jar" />
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.0.1_fba34d995371e115352e97a964e112c0a4523914\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.0.1_33ab8bd8a1ad76f48c1ab85f43975980a4f35b95.jar" />
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.1_91340997012339c0d275b8a1dc5977311de10f36\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_6c9eda51a8f8d33e5dffb0364f48ca5e8ffcb56e.jar" />
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.1_f4ad37f82229174dc5002b5ec38f5ff52a6046ae\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.0/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.2.0\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="bd75f9f0296fe220da6d0ad961831b04541c4452">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-10.2.0_6afe83637e46bde01912f3e15a7de027ba065bd9.jar" />
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-10.2.0_3c30b678f45ec1cf31efcaff07d0b152fe2e8560\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/sophiebot/Vlog/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75575883f0348fc5d2be85f23bd10b050095cf17">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-10.2.0_b4cedca00395cace9df1d31500ea13a7af69ee67\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="48532a016bb0dfbe7970c147ce784598a515406b">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-10.2.0_2a7a42b61044b8bf053448a34089a6da0678686c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.1_9fd746a00f3b8e68e8186790bc4d95d35d63a0c5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.google.android.exoplayer\exoplayer\r2.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="31ead391552fc8d93a7b87b0f15e83755b908904">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.exoplayer-exoplayer-r2.2.0_fc6ecc72c2f7c1fa6df9282e0501626b2fad3101\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4e01b82d664e1a8253b2b9658e74b5da35c8771d">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-10.2.0_3ec84ad214f88815933b4745445dd85464c68b30\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/home/sophiebot/Vlog/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_7a456b8af31d116b9f641cd40b9244c3309378f0.jar" />
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_c7c98416e70641f36b91e37ca1328ed63eb2a78c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.1_660113766fb89502697ffa3182243b026691bc53\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="74c5a91d6510ad42410e8a047d90d2ea6721a0e0">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-config-10.2.0_9439e2e180e35fc28157053b3e1a992e4ef2597e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.0.1_25673d7c8d986bfb5a9d25eaeac448c0b940f1fd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-10.2.0_7674ece9aabc373ae366add714d03f51913a6d04\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ce9112e08a027c8620ae693983e38cdbb9f6371b">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-10.2.0_1ec240ef3bc0a0533f4566a1d4e54cffaf51687c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.0.1_6f32e421e57a5a83f70170421d8c58889480d96c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ba8eb412f624df6f80fb196775d34f9d893ea35">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_33b082e9bf4bdd27de2e514399cc0216b82e98c1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.0.1_ec1db5071fb9ef2b50ce4639c6db93a9ead002e8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3d6951cb416ebf8c66a32b9480808ca247b68344">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-10.2.0_a4a10d7eb5ab019a2020e2003247e2daf4610ba7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94fca868854457ede6df15c902938468c71d579e">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-10.2.0_3734d93615a159dba74b795bff66d2f89f8c6902\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8e1d31656bc9f1889283836e025e6cb703acd38a">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-10.2.0_370f205f5422e09e8a75a8ec01eafa39eabef572\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_76791116a54aac3c1be3743ad71029bf40d9c730\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4dd3704d7fd3bb28a11cf4331a05884476eafb1d">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d5eb5a46e3ba1ca2ccf1ca0c7522fb3d5f83b751\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a61e7010aa7be5da53cd1bc5279630510c9a4912">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-10.2.0_bd791d2041b957e668c3611f5c1a56a3c8e2b483\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_aa746fb65b070af2a3b4784503e205f0ad225f9f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.android.support\design\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.0.1_fc8fe7510d718967d33cbc339b1bef57d63f81dc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.1_0ae48f38fc1b6f7a338e7efd123a9bcc6081faa9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.0.1_851b850f2ad495dea56d470f8b2f988f42af3b4b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1df6d719c4e264d66bb98baa5cb637495b8cca66">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-common-10.2.0_0b810ec340049d69c8f812671468c1f842481e52\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0f58195bee8a08f35e7d4ee7fd4b0479e570e172">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-crash-10.2.0_a731afa5be469acb1b41a1992d152f7a867cb7f4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.1_e9e20dc572bdd874ab351702da9d8ce6083e96eb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0d5cbbbfe040201c7569478b70a13b58fd11aab4">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-10.2.0_40067f5436503e6d87c29f853dc859c57bc87a60\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.1_e3c0b21217d4cf0b8838336a80e4d2019f17718f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b831d3902674d096189451d46fce219e2c2904b7">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-10.2.0_198b6cc8b91744fa45f2bbec0ebe43898e8fbcac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_95ac3ab0ac79deeb02e92a120a13f3ef2ebe3c80\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_c0b2b5ee30edb7d4b72acc5a329350ce627096ef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_4cc62fb17f6a3e145b0b1e5f63dd6ce461c3035f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.1_c0525f3ebb69c3f6de066e50866cda82cf158e93\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0e301f24b283f14b564f660c9abe863af6be5896">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-10.2.0_2bd431e68252237c3292136a881300480a096f50\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.4\695b63d702f505b9b916e02272e3b6381bade7f\gson-2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.4_3bbaecc540868b2f9b15266018696c7c3402e3e8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="646b2c48e147b943f0a39842457fdc66d501e4b6">
+        <dex dex="C:\Users\arvid.quarshie\Desktop\Vlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-10.2.0_5e5e0ada1cfcbb7d7b0e94a57b36432b1dccc02f\classes.dex" />
     </item>
 
 </items>

@@ -34,12 +34,12 @@ import java.util.List;
 import java.util.Map;
 
 public class ViewListVLogs extends AppCompatActivity {
-    SharedPreferences prefs ;
+    SharedPreferences prefs;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference().child(Constants.firebase_reference_video);
     RecyclerView listVlogs;
     List<Vlog> listVideos;
-   VlogItemRecyclerAdapter adapter;
+    VlogItemRecyclerAdapter adapter;
     NestedScrollView coordinatorLayout;
 
     @Override
@@ -52,11 +52,11 @@ public class ViewListVLogs extends AppCompatActivity {
         coordinatorLayout = (NestedScrollView) findViewById(R.id
                 .forthesnackbar);
 
-        listVideos= new ArrayList<Vlog>();
+        listVideos = new ArrayList<Vlog>();
 
-        listVlogs=(RecyclerView)findViewById(R.id.recyclelistVideos);
+        listVlogs = (RecyclerView) findViewById(R.id.recyclelistVideos);
         listVlogs.setLayoutManager(new GridLayoutManager(getApplicationContext(), 1));
-        adapter = new VlogItemRecyclerAdapter(getApplicationContext(),listVideos,myRef);
+        adapter = new VlogItemRecyclerAdapter(getApplicationContext(), listVideos, myRef);
         listVlogs.setAdapter(adapter);
         getalldata();
         getOverflowMenu();
@@ -65,7 +65,7 @@ public class ViewListVLogs extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(getApplicationContext(),PostVlog.class);
+                Intent i = new Intent(getApplicationContext(), PostVlog.class);
                 startActivity(i);
                 finish();
             }
@@ -87,9 +87,8 @@ public class ViewListVLogs extends AppCompatActivity {
                     ));
 
 
-
                     listVlogs.setLayoutManager(new GridLayoutManager(getApplicationContext(), 1));
-                    adapter = new VlogItemRecyclerAdapter(getApplicationContext(),listVideos,myRef);
+                    adapter = new VlogItemRecyclerAdapter(getApplicationContext(), listVideos, myRef);
                     listVlogs.setAdapter(adapter);
 
                     adapter.notifyDataSetChanged();
@@ -119,6 +118,7 @@ public class ViewListVLogs extends AppCompatActivity {
             }
         });
     }
+
     private void getOverflowMenu() {
 
         try {
@@ -126,7 +126,7 @@ public class ViewListVLogs extends AppCompatActivity {
 
             Field menuKeyField = ViewConfiguration.class.getDeclaredField("sHasPermanentMenuKey");
 
-            if(menuKeyField != null) {
+            if (menuKeyField != null) {
 
                 menuKeyField.setAccessible(true);
                 menuKeyField.setBoolean(config, false);
@@ -137,6 +137,7 @@ public class ViewListVLogs extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_view_list_vlogs, menu);
@@ -148,10 +149,9 @@ public class ViewListVLogs extends AppCompatActivity {
         int id = item.getItemId();
         if (id == R.id.action_logout) {
             FirebaseAuth.getInstance().signOut();
-            Intent i = new Intent(getApplicationContext(),LoginActivity.class);
+            Intent i = new Intent(getApplicationContext(), LoginActivity.class);
             startActivity(i);
             finish();
-
 
 
         }

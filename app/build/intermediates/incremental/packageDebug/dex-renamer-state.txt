@@ -1,4 +1,7 @@
-#Fri Feb 17 20:37:59 EAT 2017
-base.0=/home/sophiebot/Vlog/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
-renamed.0=classes.dex
-file.0=/home/sophiebot/Vlog/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+#Mon Feb 20 18:15:09 EAT 2017
+base.0=C\:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_d5eb5a46e3ba1ca2ccf1ca0c7522fb3d5f83b751
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_33b082e9bf4bdd27de2e514399cc0216b82e98c1\\classes.dex
+base.1=C\:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_33b082e9bf4bdd27de2e514399cc0216b82e98c1
+file.0=C\:\\Users\\arvid.quarshie\\Desktop\\Vlog\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_d5eb5a46e3ba1ca2ccf1ca0c7522fb3d5f83b751\\classes.dex
